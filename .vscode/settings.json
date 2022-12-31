@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "time.h": "c",
+        "stdio.h": "c",
+        "stdlib.h": "c",
+        "crtdefs.h": "c",
+        "windows.h": "c",
+        "math.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "Enabled"
+}
