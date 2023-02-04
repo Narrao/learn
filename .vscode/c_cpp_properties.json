@@ -10,9 +10,8 @@
                 "UNICODE",
                 "_UNICODE"
             ],
-            "cStandard": "c17",
-            "cppStandard": "c++17",
-            "intelliSenseMode": "windows-msvc-x64"
+            "intelliSenseMode": "windows-gcc-x64",
+            "compilerPath": "D:\\Program Files\\TDM-GCC-64\\bin\\gcc.exe"
         }
     ],
     "version": 4

@@ -1,25 +1,29 @@
-#include<stdio.h>
+#include <stdio.h>
+#define MAXN 20
+
+void strmcpy( char *t, int m, char *s );
+void ReadString( char s[] ); /* 由裁判实现，略去不表 */
+
 int main()
 {
-    struct book{
-        char name[31];
-        double prize;
-    };
-    int n;
-    scanf("%d",&n);getchar();
-    int max=0,min=0;
-    struct book book[n];
-    for(int i=0;i<n;i++)
+    char t[MAXN], s[MAXN];
+    int m;
+    
+    scanf("%d\n", &m);
+    ReadString(t);
+    strmcpy( t, m, s );
+    printf("%s\n", s);
+
+    return 0;
+}
+
+/* 你的代码将被嵌在这里 */
+void strmcpy( char *t, int m, char *s )
+{
+    char *p,j=0;
+    p=t;
+    for(int i = m-1;i < MAXN;i++)
     {
-        char a;int k=0;
-        while((a=getchar())!='\n')
-        {
-            book[i].name[k++]=a;
-        }
-        book[i].name[k]=0;
-        scanf("%lf",&book[i].prize);
-        if(book[i].prize>book[max].prize)max=i;
-        if(book[i].prize<book[min].prize)min=i;
+        s[j++]=*(p+i);
     }
-    printf("%.2lf, %s\n%.2lf, %s",book[max].prize,book[max].name,book[min].prize,book[min].name);
 }
