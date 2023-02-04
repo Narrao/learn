@@ -30,9 +30,9 @@ int main()
             }
         }
     }
-    int i;
-    for(i=1000;a[i]!=0;i--);
-    for (int  j = i; j >=i; j--)
+    int i=1000;
+    while(a[i]==0)i--;
+    for (int  j = i; j >=0; j--)
     {
         printf("%d",a[j]);
     }
